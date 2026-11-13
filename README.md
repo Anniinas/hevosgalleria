@@ -4,7 +4,7 @@ Kilpailukuvien galleriat ja kuvahaku: hae kuvia lajin, vuoden, rodun, värin, su
 
 - **Kuvat** ovat Azure Blob Storagessa (`originals/` ja `thumbs/`), eivät tässä repossa.
 - **Tiedot** (ryhmittely, askellajit, hevosten tiedot) ovat tässä repossa JSON-tiedostoina.
-- **Sivusto** (`site/`) on staattinen ja julkaistaan Azure Static Web Appsiin GitHub Actionsilla.
+- **Sivusto** (`site/`) on staattinen ja julkaistaan Azure Static Web Appsiin GitHub Actionsilla: https://galleria.tallinurkka.eu
 
 Kuvat: Tilli (VRL-00406), lisenssi [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.fi).
 
@@ -18,8 +18,10 @@ scripts/
   build-catalog.mjs     tarkistaa datan ja tekee site/data/catalog.json:n
   heppa.mjs             hakee hevosten tiedot Hippoksen Heppa-rekisteristä
   make_thumbs.py        tekee pikkukuvat (480 px)
-  upload-images.mjs     lataa kuvat Blob Storageen (AzCopy)
-  import-legacy.mjs     tuo galleriakansion data.js:n tähän muotoon
+  add-gallery.mjs       lisää uuden gallerian ryhmittelystä (assignments.tsv + horses.json)
+  upload-images.mjs     lataa kuvat Blob Storageen (Azure CLI)
+  orientation.mjs       merkitsee pystykuvat (ajetaan pikkukuvien teon yhteydessä)
+  import-legacy.mjs     tuo vanhan galleriakansion data.js:n tähän muotoon
   dev-server.mjs        paikallinen testipalvelin
 site/                   julkaistava sivusto (index, galleria, haku)
 ```
@@ -43,12 +45,14 @@ site/                   julkaistava sivusto (index, galleria, haku)
       "notes": "tunnistusperusteet",
       "images": [
         ["DSC03261.jpg","r"],
-        ["DSC03263.jpg","k"]
+        ["DSC03448.jpg","k","v"]
       ]
     }
   ]
 }
 ```
+
+Kolmas kenttä `"v"` tarkoittaa pystykuvaa (merkitään automaattisesti).
 
 Askellajit: `t` tölt, `r` ravi, `k` käynti, `l` laukka, `h` hyppy, `p` passi, `-` lähikuva.
 
@@ -66,41 +70,43 @@ Aja korjausten jälkeen `npm run check`, joka kertoo virheet (puuttuvat tai tupl
 
 ## Paikallinen käyttö
 
-Tarvitaan Node 20+, Python + Pillow (`python -m pip install pillow`) ja AzCopy (`winget install Microsoft.Azure.AZCopy.10`).
+Tarvitaan Node 20+, Python + Pillow (`python -m pip install pillow`) ja Azure CLI (`az login`).
 
 1. Kopioi `local-sources.example.json` → `local-sources.json` ja täytä kuvakansioiden polut (tiedosto ei mene repoon).
 2. `npm run serve` → http://localhost:8080 (kuvat näytetään suoraan omalta koneelta).
 
 ## Uuden gallerian lisääminen
 
-1. Ryhmittele kuvat `horse-gallery`-taidolla, jolloin kuvakansioon syntyy `data.js`.
-2. Lisää galleria `local-sources.json`:iin:
-   ```json
-   "2015-06-14-esteratsastus-ypaja": {
-     "dir": "2015/2015-06-14 Esteratsastus, Ypäjä",
-     "title": "Esteratsastus, Ypäjä", "discipline": "Esteratsastus", "place": "Ypäjä", "cover": "DSC01234.jpg"
-   }
+Kuvat sijoitetaan kansioon `<imagesRoot>/<vuosi>/<VVVV-KK-PP Laji, Paikka>/` ja galleria saa tunnuksen
+`VVVV-KK-PP-laji-paikka` (pienet kirjaimet, ääkköset ä→a, ö→o, å→a).
+
+1. Ryhmittele kuvat `horse-gallery`-taidolla, jolloin syntyvät `assignments.tsv` ja `horses.json`.
+2. Lisää galleria:
    ```
-3. Aja:
+   npm run add -- --id 2015-06-14-esteratsastus-ypaja --dir "2015/2015-06-14 Esteratsastus, Ypäjä" --title "Esteratsastus, Ypäjä" --discipline Esteratsastus --place Ypäjä --cover DSC01234.jpg --assignments assignments.tsv --horses horses.json
    ```
-   node scripts/import-legacy.mjs 2015-06-14-esteratsastus-ypaja
-   npm run heppa                       # näyttää löydökset
-   npm run heppa -- --apply            # tallentaa varmat osumat
-   npm run thumbs -- 2015-06-14-esteratsastus-ypaja
+   Skripti tarkistaa, että jokainen kansion kuva on ryhmittelyssä täsmälleen kerran, ja lisää gallerian
+   myös `local-sources.json`:iin. Jo rekisterissä oleva nimetty hevonen yhdistetään automaattisesti.
+3. Täydennä ja tarkista:
+   ```
+   npm run heppa                 # näyttää löydökset
+   npm run heppa -- --apply      # tallentaa varmat osumat
+   npm run thumbs -- <id>        # pikkukuvat + pystykuvien merkintä
    npm run check
-   npm run upload -- --account tilliphotogallery 2015-06-14-esteratsastus-ypaja
+   npm run serve                 # esikatselu http://localhost:8080
    ```
-4. Commitoi ja pushaa, jolloin sivusto päivittyy automaattisesti.
+4. Lataa kuvat ja julkaise:
+   ```
+   npm run upload -- <id>        # vaatii az login
+   git add -A && git commit -m "Uusi galleria: …" && git push
+   ```
 
 ## Azure-asetukset (kerran)
 
 ### Kuvat: Blob Storage
 
 1. Tee tilille `tilliphotogallery` säiliö `images`, jonka julkinen käyttötaso on **Blob** (anonyymi lukuoikeus tiedostoihin).
-2. Anna itsellesi tilin **Access Control (IAM)** -näkymässä rooli **Storage Blob Data Contributor**, jotta
-   `azcopy login` + lataus toimii. Vaihtoehtoisesti tee säiliölle SAS-tunnus kirjoitusoikeudella ja anna se
-   `--sas`-parametrina (älä tallenna sitä repoon).
-3. `npm run upload -- --account tilliphotogallery`
+2. `npm run upload -- --all` (tilin avain haetaan Azure CLI:llä, joten erillistä roolia ei tarvita).
 
 Sivusto käyttää kuvaosoitetta, joka on määritelty tiedostossa `site/config.js`.
 

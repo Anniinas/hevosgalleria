@@ -1,45 +1,48 @@
-// Lataa alkuperäiset kuvat ja pikkukuvat Azure Blob Storageen AzCopylla.
+// Lataa gallerian alkuperäiset kuvat ja pikkukuvat Azure Blob Storageen Azure CLI:llä.
 //
-//   node scripts/upload-images.mjs --account <tilinnimi> [--container images] [--sas "<sas-token>"] [gallerian-id …]
+//   node scripts/upload-images.mjs <gallerian-id> [<gallerian-id> …]
+//   node scripts/upload-images.mjs --all
+//   valinnaiset: --account tilliphotogallery  --container images
 //
-// Tunnistautuminen: joko `azcopy login` (Entra ID, tarvitsee roolin Storage Blob Data Contributor)
-// tai --sas, jossa on kirjoitusoikeus säiliöön. Ilman gallerioita ladataan kaikki local-sources.json:n galleriat.
-// Jo ladattuja kuvia ei ladata uudelleen (--overwrite=ifSourceNewer).
+// Vaatii: az login (Azure CLI). Tilin avain haetaan az:lla eikä sitä tallenneta mihinkään.
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { localSources, sourceDir } from './lib.mjs';
 
 const args = process.argv.slice(2);
-const opt = name => { const i = args.indexOf(name); return i >= 0 ? args.splice(i, 2)[1] : undefined; };
-const account = opt('--account');
-const container = opt('--container') || 'images';
-let sas = opt('--sas') || '';
-if (sas && !sas.startsWith('?')) sas = '?' + sas;
-if (!account) {
-  console.error('Anna tilin nimi: node scripts/upload-images.mjs --account <tilinnimi>');
+const opt = (name, def) => { const i = args.indexOf(name); return i >= 0 ? args.splice(i, 2)[1] : def; };
+const account = opt('--account', 'tilliphotogallery');
+const container = opt('--container', 'images');
+const all = args.includes('--all');
+const src = localSources();
+const ids = all ? Object.keys(src.galleries) : args.filter(a => !a.startsWith('--'));
+if (!ids.length) {
+  console.error('Anna gallerian tunnus: node scripts/upload-images.mjs <gallerian-id>  (tai --all)');
   process.exit(1);
 }
 
-const src = localSources();
-const ids = args.length ? args : Object.keys(src.galleries);
-const base = `https://${account}.blob.core.windows.net/${container}`;
-// Kuvat eivät muutu samalla nimellä, joten selain ja CDN saavat säilyttää ne pitkään.
-const common = ['--overwrite=ifSourceNewer', '--include-pattern=*.jpg;*.JPG;*.jpeg', '--cache-control=public, max-age=31536000, immutable', '--log-level=WARNING'];
-
-function copy(from, to) {
-  console.log(`→ ${to}`);
-  const r = spawnSync('azcopy', ['copy', path.join(from, '*'), `${base}/${to}${sas}`, ...common], { stdio: 'inherit', shell: false });
-  if (r.error) {
-    console.error('AzCopya ei löytynyt. Asenna: winget install Microsoft.Azure.AZCopy.10');
-    process.exit(1);
+const q = s => `"${String(s).replace(/"/g, '\\"')}"`;
+function az(cmd, env, capture) {
+  const r = spawnSync(`az ${cmd}`, { shell: true, env, encoding: 'utf8', stdio: capture ? ['ignore', 'pipe', 'inherit'] : 'inherit' });
+  if (r.error || r.status !== 0) {
+    console.error(`az-komento epäonnistui${r.error ? ': ' + r.error.message : ''}. Onko Azure CLI asennettu ja az login tehty?`);
+    process.exit(r.status || 1);
   }
-  if (r.status !== 0) process.exit(r.status);
+  return (r.stdout || '').trim();
 }
+
+const key = az(`storage account keys list -n ${q(account)} --query "[0].value" -o tsv`, process.env, true);
+const env = { ...process.env, AZURE_STORAGE_ACCOUNT: account, AZURE_STORAGE_KEY: key };
+// Kuvat eivät muutu samalla nimellä, joten selain saa säilyttää ne vuoden.
+const common = '--pattern "*.jpg" --content-type image/jpeg --content-cache-control "public, max-age=31536000, immutable" '
+  + '--max-connections 8 --overwrite true --only-show-errors -o none';
 
 for (const gid of ids) {
   const dir = sourceDir(src, gid);
   if (!dir) { console.error(`${gid}: ei local-sources.json:ssa`); process.exit(1); }
-  copy(dir, `originals/${gid}`);
-  copy(path.join(src.thumbsDir, gid), `thumbs/${gid}`);
+  for (const [kind, from] of [['thumbs', path.join(src.thumbsDir, gid)], ['originals', dir]]) {
+    console.log(`${new Date().toLocaleTimeString('fi')} ${kind}/${gid}`);
+    az(`storage blob upload-batch -d ${q(container)} --destination-path ${q(`${kind}/${gid}`)} -s ${q(from)} ${common}`, env);
+  }
 }
 console.log('Valmis.');

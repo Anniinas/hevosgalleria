@@ -4,12 +4,14 @@
   "type": "module",
   "description": "Hevoskuvagalleriat ja kuvahaku (staattinen sivusto, kuvat Azure Blob Storagessa)",
   "scripts": {
+    "add": "node scripts/add-gallery.mjs",
     "build": "node scripts/build-catalog.mjs",
     "check": "node scripts/build-catalog.mjs --check-files",
     "serve": "node scripts/build-catalog.mjs && node scripts/dev-server.mjs",
     "heppa": "node scripts/heppa.mjs",
     "thumbs": "python scripts/make_thumbs.py",
-    "upload": "node scripts/upload-images.mjs"
+    "upload": "node scripts/upload-images.mjs",
+    "orientation": "node scripts/orientation.mjs"
   },
   "engines": {
     "node": ">=20"
