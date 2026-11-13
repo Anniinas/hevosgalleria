@@ -1,0 +1,201 @@
+:root {
+  --bg: #f4f2ee;
+  --card: #ffffff;
+  --text: #2b2724;
+  --muted: #6f6861;
+  --line: #e2ddd6;
+  --accent: #8a3b6b;
+  --tolt: #2f7d5b;
+  --ravi: #2f5f9e;
+  --kaynti: #a0702a;
+  --laukka: #8a3b6b;
+  --hyppy: #5b4a9e;
+  --passi: #b0452f;
+  --close: #7d7873;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Yläpalkki */
+.topbar {
+  background: var(--card); border-bottom: 1px solid var(--line);
+}
+.topbar nav {
+  max-width: 1400px; margin: 0 auto; padding: 10px 16px;
+  display: flex; align-items: center; gap: 20px;
+}
+.topbar .brand { font-weight: 700; color: var(--text); text-decoration: none; font-size: 1.05rem; }
+.topbar a:not(.brand) { color: var(--muted); text-decoration: none; }
+.topbar a[aria-current="page"] { color: var(--text); font-weight: 600; }
+
+.site-header { padding: 24px 16px 12px; max-width: 1400px; margin: 0 auto; }
+.site-header h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.summary { margin: 0 0 16px; color: var(--muted); }
+
+main { max-width: 1400px; margin: 0 auto; padding: 0 16px 48px; }
+
+/* Suodattimet */
+.filters { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: flex-end; }
+.filters label { display: flex; flex-direction: column; font-size: .8rem; color: var(--muted); gap: 4px; }
+.filters select, .filters input, .search-form input {
+  font: inherit; font-size: .95rem; padding: 6px 10px; min-width: 150px; max-width: 260px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text);
+}
+.btn {
+  font: inherit; font-size: .9rem; padding: 7px 14px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--text);
+}
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .8rem; padding: 3px 4px 3px 10px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--line);
+}
+.chip button { border: none; background: none; cursor: pointer; font-size: 1rem; line-height: 1; color: var(--muted); padding: 0 4px; }
+
+/* Etusivu */
+.search-form { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.search-form input { flex: 1 1 260px; max-width: 420px; }
+.quick { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.quick a {
+  font-size: .85rem; padding: 4px 12px; border-radius: 999px; text-decoration: none;
+  background: var(--card); border: 1px solid var(--line); color: var(--text);
+}
+.year { margin-bottom: 36px; }
+.year h2 { font-size: 1.3rem; margin: 0 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  overflow: hidden; transition: transform .15s, box-shadow .15s;
+}
+.card:hover, .card:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+.card img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--line); }
+.card .body { padding: 12px 14px 14px; }
+.card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.card p { margin: 0; font-size: .85rem; color: var(--muted); }
+
+/* Galleria: yksi hevonen = yksi rivi */
+.horse-row {
+  display: grid; grid-template-columns: 240px 1fr; gap: 16px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px; margin-bottom: 14px; scroll-margin-top: 12px;
+}
+.horse-row:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.horse-info h2 { margin: 0 0 6px; font-size: 1.1rem; }
+.num {
+  font-size: .8rem; font-weight: 600; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; vertical-align: middle;
+}
+.horse-info dl, .horse-card dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: .85rem; }
+.horse-info dt, .horse-card dt { color: var(--muted); }
+.horse-info dd, .horse-card dd { margin: 0; }
+.horse-info .desc { margin: 8px 0 0; font-size: .8rem; color: var(--muted); }
+.horse-info .more { display: inline-block; margin-top: 8px; font-size: .8rem; }
+
+.gait-counts { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+
+.badge {
+  display: inline-block; font-size: .7rem; font-weight: 600;
+  padding: 2px 7px; border-radius: 999px; color: #fff; background: var(--close); white-space: nowrap;
+}
+.badge.g-t { background: var(--tolt); }
+.badge.g-r { background: var(--ravi); }
+.badge.g-k { background: var(--kaynti); }
+.badge.g-l { background: var(--laukka); }
+.badge.g-h { background: var(--hyppy); }
+.badge.g-p { background: var(--passi); }
+
+.strip { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity; }
+.thumb {
+  position: relative; flex: 0 0 auto; height: 160px; aspect-ratio: 3 / 2;
+  border: none; padding: 0; margin: 0; background: var(--line);
+  border-radius: 6px; overflow: hidden; cursor: zoom-in; scroll-snap-align: start;
+}
+.thumb.portrait { aspect-ratio: 2 / 3; }
+.thumb img { height: 100%; width: 100%; object-fit: cover; display: block; transition: transform .2s; }
+.thumb:hover img { transform: scale(1.04); }
+.thumb .badge { position: absolute; left: 6px; bottom: 6px; }
+.thumb .fname {
+  position: absolute; right: 6px; top: 6px; font-size: .65rem; color: #fff;
+  background: rgba(0,0,0,.45); padding: 1px 5px; border-radius: 4px;
+}
+
+/* Haku */
+.horse-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 14px 16px; margin: 0 0 16px; max-width: 720px;
+}
+.horse-card h2 { margin: 0 0 8px; font-size: 1.2rem; }
+.horse-card ul { margin: 8px 0 0; padding-left: 18px; font-size: .85rem; }
+.result-info { color: var(--muted); margin: 0 0 12px; }
+/* Tasatut rivit: kuvan leveys määräytyy sen suunnasta, rivit venyvät täyteen leveyteen.
+   flex-grow = kuvasuhde, joten kuvat venyvät samassa suhteessa eikä rajausta juuri tule. */
+.results { display: flex; flex-wrap: wrap; gap: 8px; --row-h: 190px; }
+.results::after { content: ""; flex-grow: 999; }
+.results .thumb { height: var(--row-h); aspect-ratio: auto; flex: 1.5 1 calc(var(--row-h) * 1.5); max-width: calc(var(--row-h) * 2.2); }
+.results .thumb.portrait { flex: 0.667 1 calc(var(--row-h) * 0.667); max-width: calc(var(--row-h) * 1); }
+.results .thumb .label {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 8px 6px;
+  font-size: .75rem; color: #fff; text-align: left;
+  background: linear-gradient(transparent, rgba(0,0,0,.65));
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.results .thumb .badge { left: auto; right: 6px; bottom: auto; top: 6px; }
+.more-wrap { text-align: center; margin: 20px 0; }
+
+.empty { color: var(--muted); text-align: center; padding: 40px 0; }
+
+/* Iso kuva */
+.lightbox {
+  position: fixed; inset: 0; background: rgba(15, 13, 12, .94);
+  display: flex; align-items: center; justify-content: center; z-index: 10;
+}
+.lightbox[hidden] { display: none; }
+.lightbox figure { margin: 0; max-width: 92vw; text-align: center; }
+.lightbox img { max-width: 92vw; max-height: 80vh; display: block; margin: 0 auto; border-radius: 4px; }
+.lightbox figcaption { color: #eee; margin-top: 10px; font-size: .9rem; }
+.lightbox figcaption a { color: #f3c7e1; }
+.lb-close, .lb-nav {
+  position: absolute; background: none; border: none; color: #fff;
+  font-size: 2.6rem; cursor: pointer; opacity: .75; padding: 8px 16px;
+}
+.lb-close:hover, .lb-nav:hover { opacity: 1; }
+.lb-close { top: 8px; right: 12px; }
+.lb-prev { left: 4px; }
+.lb-next { right: 4px; }
+.lb-credit { display: block; margin-top: 4px; font-size: .8rem; opacity: .75; }
+
+/* Lisenssi */
+.license {
+  max-width: 900px; margin: 32px auto 24px; padding: 16px 20px;
+  border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
+}
+.license p { margin: 0 0 8px; }
+.license a { color: inherit; }
+.credit-example {
+  font-family: ui-monospace, Consolas, monospace; font-size: .8rem;
+  background: var(--card); border: 1px solid var(--line); border-radius: 4px;
+  padding: 6px 10px; user-select: all; overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .horse-row { grid-template-columns: 1fr; }
+  .thumb { height: 120px; }
+  .results { --row-h: 120px; gap: 6px; }
+  .filters label, .filters select, .filters input { flex: 1 1 140px; min-width: 0; max-width: none; }
+}

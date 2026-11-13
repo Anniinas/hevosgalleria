@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hevosgalleriat</title>
+  <meta name="description" content="Kilpailukuvia hevosista. Hae kuvia rodun, värin ja askellajin mukaan.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar"><nav>
+    <a class="brand" href="./" aria-current="page">Hevosgalleriat</a>
+    <a href="haku.html">Haku</a>
+  </nav></header>
+
+  <header class="site-header">
+    <h1>Hevosgalleriat</h1>
+    <p class="summary" id="summary">Kilpailukuvat vuosittain. Jokaisessa galleriassa sama hevonen on omalla rivillään.</p>
+    <form class="search-form" action="haku.html" role="search">
+      <input type="search" name="nimi" placeholder="Hae hevosen nimellä…" aria-label="Hevosen nimi">
+      <button class="btn primary" type="submit">Hae</button>
+      <a class="btn" href="haku.html" style="text-decoration:none">Tarkka haku</a>
+    </form>
+    <div class="quick" id="quick"></div>
+  </header>
+
+  <main id="years"></main>
+
+  <footer class="license" id="license" hidden></footer>
+
+  <script type="module" src="assets/etusivu.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galleria – Hevosgalleriat</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar"><nav>
+    <a class="brand" href="./">Hevosgalleriat</a>
+    <a href="haku.html">Haku</a>
+  </nav></header>
+
+  <header class="site-header">
+    <h1 id="title">Galleria</h1>
+    <p class="summary" id="summary"></p>
+    <div class="filters">
+      <label>Väri
+        <select id="filter-color"><option value="">Kaikki</option></select>
+      </label>
+      <label>Askellaji
+        <select id="filter-gait"><option value="">Kaikki</option></select>
+      </label>
+    </div>
+  </header>
+
+  <main id="gallery"></main>
+
+  <footer class="license" id="license" hidden></footer>
+
+  <script type="module" src="assets/galleria.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haku – Hevosgalleriat</title>
+  <meta name="description" content="Hae hevoskuvia rodun, värin, askellajin ja lajin mukaan.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar"><nav>
+    <a class="brand" href="./">Hevosgalleriat</a>
+    <a href="haku.html" aria-current="page">Haku</a>
+  </nav></header>
+
+  <header class="site-header">
+    <h1>Hae kuvia</h1>
+    <form class="filters" id="filters" role="search">
+      <label>Hevosen nimi
+        <input type="search" id="f-nimi" name="nimi" placeholder="esim. Sunstar" autocomplete="off">
+      </label>
+      <label>Laji <select name="laji"></select></label>
+      <label>Vuosi <select name="vuosi"></select></label>
+      <label>Galleria <select name="galleria"></select></label>
+      <label>Rotu <select name="rotu"></select></label>
+      <label>Väri <select name="vari"></select></label>
+      <label>Sukupuoli <select name="sukupuoli"></select></label>
+      <label>Askellaji <select name="askellaji"></select></label>
+      <button class="btn" type="button" id="reset">Tyhjennä</button>
+    </form>
+    <div class="chips" id="chips"></div>
+  </header>
+
+  <main>
+    <div id="horse-card"></div>
+    <p class="result-info" id="result-info" aria-live="polite">Ladataan…</p>
+    <div class="results" id="results"></div>
+    <div class="more-wrap"><button class="btn" id="more" hidden>Näytä lisää</button></div>
+  </main>
+
+  <footer class="license" id="license" hidden></footer>
+
+  <script type="module" src="assets/haku.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "routes": [
+    { "route": "/data/*", "headers": { "Cache-Control": "public, max-age=300" } },
+    { "route": "/assets/*", "headers": { "Cache-Control": "public, max-age=3600" } }
+  ],
+  "responseOverrides": {
+    "404": { "rewrite": "/index.html" }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  }
+}
