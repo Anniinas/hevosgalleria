@@ -614,7 +614,7 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ab",
+      "horse": "pyrypolun-doris",
       "number": "",
       "colorDesc": "Rautias, vaalea harja",
       "notes": "Nuori ratsastaja. Kuvat 02998–03050.",
@@ -648,10 +648,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ac",
+      "horse": "viuhkale",
       "number": "",
       "colorDesc": "Rautias",
-      "notes": "Kuvat 03052–03084.",
+      "notes": "Kuvat 03052–03084. Kuvat 03105–03147.",
       "images": [
         ["DSC03052.jpg","r"],
         ["DSC03053.jpg","r"],
@@ -668,15 +668,7 @@
         ["DSC03074.jpg","r"],
         ["DSC03077.jpg","r"],
         ["DSC03080.jpg","r"],
-        ["DSC03084.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ad",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 03105–03147.",
-      "images": [
+        ["DSC03084.jpg","r"],
         ["DSC03105.jpg","k"],
         ["DSC03109.jpg","k"],
         ["DSC03113.jpg","k"],
@@ -698,7 +690,7 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ae",
+      "horse": "minimatti",
       "number": "",
       "colorDesc": "Vaalea liinakko, letitetty harja",
       "notes": "Ratsastajalla ruskea takki. Kuvat 03149–03266.",
@@ -763,10 +755,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-af",
+      "horse": "jallaralla",
       "number": "",
       "colorDesc": "Rautias, läsi",
-      "notes": "Kuvat 03269–03312.",
+      "notes": "Kuvat 03269–03312. Kuvat 03313–03340. Kuvat 03341–03366. Kuvat 03367–03430.",
       "images": [
         ["DSC03269.jpg","r"],
         ["DSC03270.jpg","r"],
@@ -792,15 +784,7 @@
         ["DSC03302.jpg","r"],
         ["DSC03307.jpg","r"],
         ["DSC03310.jpg","r"],
-        ["DSC03312.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ag",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 03313–03340.",
-      "images": [
+        ["DSC03312.jpg","r"],
         ["DSC03313.jpg","r"],
         ["DSC03315.jpg","r"],
         ["DSC03317.jpg","r"],
@@ -818,15 +802,7 @@
         ["DSC03337.jpg","r"],
         ["DSC03338.jpg","r"],
         ["DSC03339.jpg","r"],
-        ["DSC03340.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ah",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 03341–03366.",
-      "images": [
+        ["DSC03340.jpg","r"],
         ["DSC03341.jpg","r"],
         ["DSC03342.jpg","r"],
         ["DSC03343.jpg","r"],
@@ -852,15 +828,7 @@
         ["DSC03363.jpg","-"],
         ["DSC03364.jpg","-"],
         ["DSC03365.jpg","-"],
-        ["DSC03366.jpg","-"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ai",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 03367–03430.",
-      "images": [
+        ["DSC03366.jpg","-"],
         ["DSC03367.jpg","k"],
         ["DSC03368.jpg","k"],
         ["DSC03369.jpg","k"],
@@ -1121,10 +1089,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-am",
+      "horse": "usvasuon-tekila",
       "number": "",
       "colorDesc": "Ruunikko, läsi",
-      "notes": "Kuvat 03648–03711.",
+      "notes": "Kuvat 03648–03711. Numerolappu suitsissa (kuva 03722), vain osa näkyy – ei luettavissa varmasti. Kuvat 03713–03737.",
       "images": [
         ["DSC03648.jpg","r","v"],
         ["DSC03649.jpg","r","v"],
@@ -1166,15 +1134,7 @@
         ["DSC03704.jpg","l"],
         ["DSC03705.jpg","l"],
         ["DSC03707.jpg","l"],
-        ["DSC03711.jpg","l"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-an",
-      "number": "",
-      "colorDesc": "Ruunikko, läsi",
-      "notes": "Numerolappu suitsissa (kuva 03722), vain osa näkyy – ei luettavissa varmasti. Kuvat 03713–03737.",
-      "images": [
+        ["DSC03711.jpg","l"],
         ["DSC03713.jpg","r"],
         ["DSC03714.jpg","r"],
         ["DSC03715.jpg","r"],
@@ -1197,10 +1157,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ao",
+      "horse": "huru-simeon",
       "number": "",
       "colorDesc": "Rautias, vaalea harja",
-      "notes": "Kuvat 03738–03751.",
+      "notes": "Kuvat 03738–03751. Kuvat 03752–03848.",
       "images": [
         ["DSC03738.jpg","r","v"],
         ["DSC03739.jpg","r","v"],
@@ -1215,15 +1175,7 @@
         ["DSC03748.jpg","r","v"],
         ["DSC03749.jpg","r","v"],
         ["DSC03750.jpg","r","v"],
-        ["DSC03751.jpg","r","v"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ap",
-      "number": "",
-      "colorDesc": "Rautias, vaalea harja ja häntä",
-      "notes": "Kuvat 03752–03848.",
-      "images": [
+        ["DSC03751.jpg","r","v"],
         ["DSC03752.jpg","k"],
         ["DSC03754.jpg","k"],
         ["DSC03755.jpg","k"],
@@ -1275,10 +1227,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-aq",
+      "horse": "corleone",
       "number": "019",
       "colorDesc": "Rautias, vaalea häntä",
-      "notes": "Nro 019 suitsissa (kuva 03892). Kuvat 03852–03947.",
+      "notes": "Nro 019 suitsissa (kuva 03892). Kuvat 03852–03947. Vain edestä otettuja kuvia. Kuvat 03951–03962.",
       "images": [
         ["DSC03852.jpg","r"],
         ["DSC03854.jpg","r"],
@@ -1333,15 +1285,7 @@
         ["DSC03942.jpg","r"],
         ["DSC03943.jpg","l"],
         ["DSC03946.jpg","l"],
-        ["DSC03947.jpg","l"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ar",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Vain edestä otettuja kuvia. Kuvat 03951–03962.",
-      "images": [
+        ["DSC03947.jpg","l"],
         ["DSC03951.jpg","r","v"],
         ["DSC03952.jpg","r","v"],
         ["DSC03953.jpg","r","v"],
@@ -1454,10 +1398,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-au",
+      "horse": "ennustus",
       "number": "",
       "colorDesc": "Rautias, vaalea häntä",
-      "notes": "Voi olla sama kuin hevonen AU2. Kuvat 04113–04167.",
+      "notes": "Voi olla sama kuin hevonen AU2. Kuvat 04113–04167. Kuvattu lomittain hevosen AU kanssa. Kuvat 04130–04156.",
       "images": [
         ["DSC04113.jpg","r"],
         ["DSC04114.jpg","r"],
@@ -1474,15 +1418,7 @@
         ["DSC04160.jpg","r"],
         ["DSC04163.jpg","r"],
         ["DSC04165.jpg","r"],
-        ["DSC04167.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-au2",
-      "number": "",
-      "colorDesc": "Rautias, pörröinen vaalea harja",
-      "notes": "Kuvattu lomittain hevosen AU kanssa. Kuvat 04130–04156.",
-      "images": [
+        ["DSC04167.jpg","r"],
         ["DSC04130.jpg","r"],
         ["DSC04132.jpg","r"],
         ["DSC04133.jpg","r"],
@@ -1503,7 +1439,7 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-av",
+      "horse": "kurt-ruben",
       "number": "",
       "colorDesc": "Tumma punaruskea rautias",
       "notes": "Ratsastajalla violetti frakki. Kuvat 04169–04261.",
@@ -1575,10 +1511,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-aw",
+      "horse": "luottojatka",
       "number": "",
       "colorDesc": "Rautias, vaalea harja",
-      "notes": "Voi olla sama kuin hevonen AT tai AX. Kuvat 04262–04300.",
+      "notes": "Voi olla sama kuin hevonen AT tai AX. Kuvat 04262–04300. Voi olla sama kuin hevonen AT tai AW. Kuvat 04303–04358.",
       "images": [
         ["DSC04262.jpg","r","v"],
         ["DSC04263.jpg","r","v"],
@@ -1607,15 +1543,7 @@
         ["DSC04297.jpg","r"],
         ["DSC04298.jpg","-"],
         ["DSC04299.jpg","-"],
-        ["DSC04300.jpg","-"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-ax",
-      "number": "",
-      "colorDesc": "Rautias, vaalea harja ja häntä",
-      "notes": "Voi olla sama kuin hevonen AT tai AW. Kuvat 04303–04358.",
-      "images": [
+        ["DSC04300.jpg","-"],
         ["DSC04303.jpg","r"],
         ["DSC04304.jpg","r"],
         ["DSC04305.jpg","r"],
@@ -1655,10 +1583,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ay",
+      "horse": "niilo-salama",
       "number": "",
       "colorDesc": "Suklaanruskea, vaaleampi häntä (voi olla myös hopeanmusta)",
-      "notes": "Kuvat 04360–04399.",
+      "notes": "Kuvat 04360–04399. Kuvat 04400–04446.",
       "images": [
         ["DSC04360.jpg","r","v"],
         ["DSC04361.jpg","r","v"],
@@ -1684,15 +1612,7 @@
         ["DSC04395.jpg","-"],
         ["DSC04396.jpg","-"],
         ["DSC04397.jpg","-"],
-        ["DSC04399.jpg","-"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-az",
-      "number": "",
-      "colorDesc": "Suklaanruskea, vaalea häntä (voi olla myös hopeanmusta)",
-      "notes": "Kuvat 04400–04446.",
-      "images": [
+        ["DSC04399.jpg","-"],
         ["DSC04400.jpg","r"],
         ["DSC04401.jpg","r"],
         ["DSC04404.jpg","r"],
@@ -1727,10 +1647,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-ba",
+      "horse": "tinasoturi",
       "number": "",
       "colorDesc": "Rautias",
-      "notes": "Kuvat 04448–04476.",
+      "notes": "Kuvat 04448–04476. Kuvat 04477–04492. Kuvat 04494–04511.",
       "images": [
         ["DSC04448.jpg","l"],
         ["DSC04449.jpg","l"],
@@ -1756,15 +1676,7 @@
         ["DSC04473.jpg","-"],
         ["DSC04474.jpg","-"],
         ["DSC04475.jpg","r"],
-        ["DSC04476.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bb",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 04477–04492.",
-      "images": [
+        ["DSC04476.jpg","r"],
         ["DSC04477.jpg","r"],
         ["DSC04478.jpg","r"],
         ["DSC04479.jpg","r"],
@@ -1778,15 +1690,7 @@
         ["DSC04488.jpg","r"],
         ["DSC04490.jpg","r"],
         ["DSC04491.jpg","r"],
-        ["DSC04492.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bc",
-      "number": "",
-      "colorDesc": "Rautias",
-      "notes": "Kuvat 04494–04511.",
-      "images": [
+        ["DSC04492.jpg","r"],
         ["DSC04494.jpg","l"],
         ["DSC04495.jpg","l"],
         ["DSC04496.jpg","l"],
@@ -1804,10 +1708,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-bd",
+      "horse": "amigo",
       "number": "",
       "colorDesc": "Ruunikko",
-      "notes": "Kuvat 04512–04555.",
+      "notes": "Kuvat 04512–04555. Kuvat 04556–04573. Kuvat 04574–04585. Kuvat 04586–04593.",
       "images": [
         ["DSC04512.jpg","r","v"],
         ["DSC04513.jpg","r","v"],
@@ -1840,15 +1744,7 @@
         ["DSC04552.jpg","r"],
         ["DSC04553.jpg","r"],
         ["DSC04554.jpg","r"],
-        ["DSC04555.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-be",
-      "number": "",
-      "colorDesc": "Ruunikko",
-      "notes": "Kuvat 04556–04573.",
-      "images": [
+        ["DSC04555.jpg","r"],
         ["DSC04556.jpg","r"],
         ["DSC04557.jpg","r"],
         ["DSC04558.jpg","r"],
@@ -1866,15 +1762,7 @@
         ["DSC04570.jpg","r"],
         ["DSC04571.jpg","r"],
         ["DSC04572.jpg","r"],
-        ["DSC04573.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bf",
-      "number": "",
-      "colorDesc": "Ruunikko",
-      "notes": "Kuvat 04574–04585.",
-      "images": [
+        ["DSC04573.jpg","r"],
         ["DSC04574.jpg","l"],
         ["DSC04575.jpg","l"],
         ["DSC04576.jpg","l"],
@@ -1886,15 +1774,7 @@
         ["DSC04582.jpg","l"],
         ["DSC04583.jpg","r"],
         ["DSC04584.jpg","l"],
-        ["DSC04585.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bg",
-      "number": "",
-      "colorDesc": "Ruunikko",
-      "notes": "Kuvat 04586–04593.",
-      "images": [
+        ["DSC04585.jpg","r"],
         ["DSC04586.jpg","r"],
         ["DSC04587.jpg","r"],
         ["DSC04588.jpg","r"],
@@ -1906,10 +1786,10 @@
       ]
     },
     {
-      "horse": "2014-09-13-kouluratsastus-laakso-bh",
+      "horse": "hermione",
       "number": "032",
       "colorDesc": "Vaalea liinakko, vaalea harja",
-      "notes": "Nro 032 suitsissa (kuva 04629). Kuvat 04594–04630.",
+      "notes": "Nro 032 suitsissa (kuva 04629). Kuvat 04594–04630. Vain 8 kuvaa; voi olla sama kuin BH tai BJ. Kuvat 04631–04638. Voi olla sama kuin BH. Kuvat 04639–04673.",
       "images": [
         ["DSC04594.jpg","r","v"],
         ["DSC04595.jpg","r","v"],
@@ -1944,15 +1824,7 @@
         ["DSC04626.jpg","r"],
         ["DSC04628.jpg","-"],
         ["DSC04629.jpg","-"],
-        ["DSC04630.jpg","-"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bi",
-      "number": "",
-      "colorDesc": "Vaalea liinakko, vaalea harja",
-      "notes": "Vain 8 kuvaa; voi olla sama kuin BH tai BJ. Kuvat 04631–04638.",
-      "images": [
+        ["DSC04630.jpg","-"],
         ["DSC04631.jpg","r"],
         ["DSC04632.jpg","r"],
         ["DSC04633.jpg","r"],
@@ -1960,15 +1832,7 @@
         ["DSC04635.jpg","r"],
         ["DSC04636.jpg","r"],
         ["DSC04637.jpg","r"],
-        ["DSC04638.jpg","r"]
-      ]
-    },
-    {
-      "horse": "2014-09-13-kouluratsastus-laakso-bj",
-      "number": "",
-      "colorDesc": "Vaalea liinakko, vaalea harja",
-      "notes": "Voi olla sama kuin BH. Kuvat 04639–04673.",
-      "images": [
+        ["DSC04638.jpg","r"],
         ["DSC04639.jpg","r"],
         ["DSC04640.jpg","r"],
         ["DSC04641.jpg","r"],
