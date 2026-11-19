@@ -275,230 +275,6 @@
     "color": "Tummanruunikko",
     "unnamed": true
   },
-  "2014-09-13-kouluratsastus-laakso-a": {
-    "name": "Hevonen 1",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-aa": {
-    "name": "Hevonen 26",
-    "breed": "Suomenhevonen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-aj": {
-    "name": "Hevonen 35",
-    "breed": "Suomenhevonen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-ak": {
-    "name": "Hevonen 36",
-    "breed": "Suomenhevonen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-al": {
-    "name": "Hevonen 37",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-al2": {
-    "name": "Hevonen 38",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-as": {
-    "name": "Hevonen 45",
-    "breed": "Suomenhevonen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-at": {
-    "name": "Hevonen 46",
-    "breed": "Suomenhevonen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-b": {
-    "name": "Hevonen 2",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-c": {
-    "name": "Hevonen 3",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-d": {
-    "name": "Hevonen 4",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-e": {
-    "name": "Hevonen 5",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-f": {
-    "name": "Hevonen 6",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Tummanruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-g": {
-    "name": "Hevonen 7",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Tummanruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-h": {
-    "name": "Hevonen 8",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Tummanruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-j": {
-    "name": "Hevonen 9",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-k": {
-    "name": "Hevonen 10",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-l": {
-    "name": "Hevonen 11",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Tummanruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-m": {
-    "name": "Hevonen 12",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-n": {
-    "name": "Hevonen 13",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-o": {
-    "name": "Hevonen 14",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-p": {
-    "name": "Hevonen 15",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Musta",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-q": {
-    "name": "Hevonen 16",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Musta",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-r": {
-    "name": "Hevonen 17",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Musta",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-s": {
-    "name": "Hevonen 18",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Tummanruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-t": {
-    "name": "Hevonen 19",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Musta",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-u": {
-    "name": "Hevonen 20",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Musta",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-v": {
-    "name": "Hevonen 21",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-w": {
-    "name": "Hevonen 22",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-x": {
-    "name": "Hevonen 23",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Ruunikko",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-y": {
-    "name": "Hevonen 24",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Rautias",
-    "unnamed": true
-  },
-  "2014-09-13-kouluratsastus-laakso-z": {
-    "name": "Hevonen 25",
-    "breed": "Puoliverinen",
-    "breedUncertain": true,
-    "color": "Kimo",
-    "unnamed": true
-  },
   "aegir-fra-strandarhjaleigu": {
     "name": "Aegir fra Strandarhjaleigu",
     "breed": "Islanninhevonen",
@@ -510,6 +286,19 @@
       "reg": "352002000184877",
       "sire": "Töfri frá Kjartansstöðum*",
       "dam": "Skima fra Bulandi*"
+    }
+  },
+  "akord-ii": {
+    "name": "Akord II",
+    "breed": "Ukrainalainen Ratsuhevonen",
+    "color": "Mustanruunikko",
+    "gender": "Ruuna",
+    "born": 2005,
+    "heppa": {
+      "id": "8657845981685471165",
+      "reg": "UA630000797",
+      "sire": "Obrazets",
+      "dam": "Aktrisa"
     }
   },
   "amigo": {
@@ -560,6 +349,19 @@
       "dam": "Tuntematon Tamma"
     }
   },
+  "blue-marquez": {
+    "name": "Blue Marquez",
+    "breed": "Suomalainen lämminverinen ratsuhevonen Fwb",
+    "color": "Musta",
+    "gender": "Ruuna",
+    "born": 2003,
+    "heppa": {
+      "id": "5214378689636082255",
+      "reg": "R03-1112",
+      "sire": "Acapulco BRD 99",
+      "dam": "Indigo GER 2094"
+    }
+  },
   "branke-sil": {
     "name": "Branke Sil",
     "breed": "Suomalainen lämminverinen ratsuhevonen Fwb",
@@ -571,6 +373,19 @@
       "reg": "R05-1017",
       "sire": "Belissimo M",
       "dam": "Rosenranke 1985"
+    }
+  },
+  "caspar-s": {
+    "name": "Caspar S",
+    "breed": "Brandenburgilainen lämminverinen ratsuhevonen",
+    "color": "Tummanruunikko",
+    "gender": "Ruuna",
+    "born": 2002,
+    "heppa": {
+      "id": "2464904541080316598",
+      "reg": "R02-1306",
+      "sire": "Campari M",
+      "dam": "Gilett"
     }
   },
   "cassiopeia-ks": {
@@ -622,6 +437,19 @@
       "reg": "2032-02",
       "sire": "Erovisku",
       "dam": "Karine"
+    }
+  },
+  "coro-la-bryere": {
+    "name": "Coro la Bryére",
+    "breed": "Tanskalainen lämminverinen ratsuhevonen",
+    "color": "Kimo",
+    "gender": "Ruuna",
+    "born": 1994,
+    "heppa": {
+      "id": "9171613068094715598",
+      "reg": "208333199401945",
+      "sire": "Coronado",
+      "dam": "Tokaloma"
     }
   },
   "ebekur-rus": {
@@ -812,6 +640,19 @@
       "dam": "Star Florette Swe"
     }
   },
+  "kekkale": {
+    "name": "Kekkale",
+    "breed": "Suomenhevonen",
+    "color": "Tummanpunarautias",
+    "gender": "Ruuna",
+    "born": 2000,
+    "heppa": {
+      "id": "6388535748404991488",
+      "reg": "1476-00",
+      "sire": "Liptus",
+      "dam": "Ruutu-Pastilli"
+    }
+  },
   "kurt-ruben": {
     "name": "Kurt Ruben",
     "breed": "Suomenhevonen",
@@ -862,6 +703,19 @@
       "reg": "R04-1007",
       "sire": "JJ Big Sky SWE",
       "dam": "Too Much IQ SWE"
+    }
+  },
+  "laram": {
+    "name": "Laram",
+    "breed": "Suomalainen lämminverinen ratsuhevonen Fwb",
+    "color": "Ruunikko",
+    "gender": "Ruuna",
+    "born": 2004,
+    "heppa": {
+      "id": "5862743079472699697",
+      "reg": "R04-1285",
+      "sire": "Ramanov 106",
+      "dam": "Lamicha 1370"
     }
   },
   "lisa-fra-eystri-hol": {
@@ -1084,6 +938,19 @@
       "dam": "Ófeig fra Katulabo DK 108 ISL"
     }
   },
+  "pimun-vilske": {
+    "name": "Pimun Vilske",
+    "breed": "Suomenhevonen",
+    "color": "Punarautias",
+    "gender": "Ori",
+    "born": 2003,
+    "heppa": {
+      "id": "1049613577963187150",
+      "reg": "1242-03",
+      "sire": "Vahto",
+      "dam": "Konnan Pimu"
+    }
+  },
   "pin-rock-s-black-velvet": {
     "name": "Pin Rock's Black Velvet",
     "breed": "Puoliverinen",
@@ -1255,6 +1122,19 @@
       "dam": "Stjarna Fra Bakkakoti*"
     }
   },
+  "sumun-lordi": {
+    "name": "Sumun Lordi",
+    "breed": "Suomenhevonen",
+    "color": "Rautias",
+    "gender": "Ori",
+    "born": 2006,
+    "heppa": {
+      "id": "3883975533240013065",
+      "reg": "1590-06",
+      "sire": "Linkker",
+      "dam": "Surillon Sumu"
+    }
+  },
   "the-blue-flame": {
     "name": "The Blue Flame",
     "breed": "American Quarter Horse",
@@ -1318,6 +1198,19 @@
       "reg": "1364-06",
       "sire": "Pilven Poika",
       "dam": "Vekseliini"
+    }
+  },
+  "valosa": {
+    "name": "Valosa",
+    "breed": "Suomenhevonen",
+    "color": "Rautias",
+    "gender": "Tamma",
+    "born": 2000,
+    "heppa": {
+      "id": "3276280858332257997",
+      "reg": "2315-00",
+      "sire": "Viltterin Vile",
+      "dam": "Jemine"
     }
   },
   "viuhkale": {
